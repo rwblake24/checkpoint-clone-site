@@ -18,13 +18,247 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
     defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
 
   <link rel="stylesheet" href="styles.css" />
   <title>Checkpoint Clone Site</title>
 </head>
 
-<body class="debug">
-  Hello There
+<body class="debug bg-light-subtle">
+  <!--SECTION Navbar-->
+  <nav class="navbar navbar-expand-sm bg-light shadow sticky-top p-2">
+    <div class="container-fluid">
+      <div class="navbar-brand d-flex align-items-center">
+        <span class="mdi mdi-cog-outline fs-1 me-2"></span><span class="fs-3 playfair-display-font fw-medium">Empire
+          <span class="text-danger">Recruiting</span></span>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-2 my-2 my-md-0 fw-medium">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel">Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--SECTION hero image-->
+  <header class="container-fluid hero-section d-flex flex-column align-items-center p-5" id="home">
+    <div class="row justify-content-center align-item-center text-center gap-4">
+      <div class="col-md-4 card shadow border-0 p-4">
+        <!--contact form-->
+        <form>
+          <div class="container">
+            <div class="row text-start justify-content-center">
+              <div class="col-12 mb-3">
+                <span class="fw-medium text-danger">Sign up for more information</span>
+              </div>
+              <div class="col-12 mb-3">
+                <input type="text" class="form-control fw-medium small-font" id="name" placeholder="NAME">
+              </div>
+              <div class="col-12 mb-3">
+                <input type="text" class="form-control fw-medium small-font" id="email" placeholder="EMAIL">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 mb-3">
+                <input type="text" class="form-control small-font fw-medium" id="phone" placeholder="PHONE">
+              </div>
+              <div class="col-4 mb-3 ">
+                <input type="text" class="form-control small-font fw-medium" id="extension" placeholder="EXT.">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <textarea class="form-control small-font fw-medium" Id="textbox" rows="4"
+                  placeholder="Message"></textarea>
+              </div>
+              <div class="form-check m-3">
+                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                <label class="form-check-label smaller-font text-start" for="checkChecked">
+                  By checking this box I agree to join the empire and never assist the rebel scum. Punishable by death.
+                </label>
+              </div>
+              <div class="d-flex justify-content-start">
+                <button class="btn btn-danger small-font fw-medium rounded-pill">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--collapsing text-->
+      <div class="col-md-6 d-none d-md-block text-light text-start">
+        <h1 class="playfair-display-font fw-bold text-shadow text-danger">Enlist Today</h1>
+        <p class="text-shadow fw-medium">Bring peace and justice to our New Empire. Defend the Galaxy from dangerous
+          rebels.
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--SECTION info with floating box-->
+    <section class="container-fuild p-5 bg-dark-subtle" id="about">
+      <div class="row text-light">
+        <div class="col-md-6 order-2 order-md-1">
+          <h2 class="playfair-display-font fw-bold mt-3 text-danger">About</h2>
+          <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nesciunt sint reprehenderit!
+            Ipsa consequuntur
+            est vel a molestias inventore, nostrum debitis aperiam quaerat alias quos reprehenderit esse nemo sed
+            laudantium.</p>
+        </div>
+
+        <!--floating card-->
+        <div class="col-md-6 order-1 order-md-2">
+          <div class="magic-container">
+            <div class="card magic-card shadow border-0 p-4">
+              <div class="container">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-3 mb-1 text-center">
+                    <span class="mdi mdi-wallet-travel fs-3 text-danger"></span>
+                  </div>
+                  <div class="col-9 mb-1">Travel to Exotic Worlds</div>
+                  <div class="col-3 mb-1 text-center">
+                    <span class="mdi mdi-atom fs-3 text-danger"></span>
+                  </div>
+                  <div class="col-9 mb-1">Most advanced tech in the Galaxy</div>
+                  <div class="col-3 mb-1 text-center">
+                    <span class="mdi mdi-sunglasses fs-3 text-danger"></span>
+                  </div>
+                  <div class="col-9 mb-1">Stylish Armor and uniforms</div>
+                  <div class="col-3 mb-1 text-center">
+                    <span class="mdi mdi-rocket-launch-outline fs-3 text-danger"></span>
+                  </div>
+                  <div class="col-9 mb-1">Fastest vehicles</div>
+                  <div class="col-3 mb-1 text-center">
+                    <span class="mdi mdi-hammer fs-3 text-danger"></span>
+                  </div>
+                  <div class="col-9 mb-1">Authority</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION image and text-->
+    <section class="container-fuild  p-5" id="travel">
+      <div class="row align-items-center justify-content-center">
+        <!--image-->
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="lego empire" class="img-fluid rounded shadow">
+        </div>
+        <!--text-->
+        <div class="col-md-6 text-center p-5">
+          <h3>
+            <span class="mdi mdi-rocket large-font text-danger"></span>
+          </h3>
+          <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vitae, unde soluta at
+            blanditiis molestias
+            accusantium impedit earum aliquam quis. Ipsam voluptates quaerat hic fugiat voluptatum distinctio esse
+            laboriosam dolorem.</p>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-danger small-font fw-medium rounded-pill">Join Today</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION 3 cards-->
+    <section class="container-fluid ">
+      <div class="row justify-content-center align-items-center bg-dark-subtle p-5">
+
+        <!--card 1-->
+        <div class="col-md-4 order-2 order-md-1 g-4">
+          <div class="card p-3 shadow">
+            <p class="small-font card-body fst-italic m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur corrupti saepe, soluta itaque hic nostrum provident nemo asperiores eveniet illo incidunt
+              possimus unde aut repellendus! Rerum at distinctio voluptates dicta.
+            </p>
+            <div class="text-center small-font text-danger fw-bold"><span class="d-block">Reviewed by</span>
+              <span>Trooper FN7893</span>
+            </div>
+          </div>
+        </div>
+
+        <!--card 2 larger-->
+        <div class="col-md-4 order-1 order-md-2 g-4">
+          <div class="card p-3 shadow">
+            <h4 class="text-center text-danger fs-1">
+              <span class="mdi mdi-star-circle "></span><span class="mdi mdi-star-circle "></span><span
+                class="mdi mdi-star-circle "></span>
+            </h4>
+            <p class="small-font card-body fst-italic m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur corrupti saepe, soluta itaque hic nostrum provident nemo asperiores eveniet illo incidunt
+              possimus unde aut repellendus! Rerum at distinctio voluptates dicta.
+            </p>
+            <div class="text-center small-font text-danger fw-bold"><span class="d-block">Reviewed by</span>
+              <span>Trooper FN24601</span>
+            </div>
+          </div>
+        </div>
+
+        <!--card 3-->
+        <div class="col-md-4 order-3 order-md-3 g-4">
+          <div class="card p-3 shadow">
+            <p class="small-font card-body fst-italic m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur corrupti saepe, soluta itaque hic nostrum provident nemo asperiores eveniet illo incidunt
+              possimus unde aut repellendus! Rerum at distinctio voluptates dicta.
+            </p>
+            <div class="text-center small-font text-danger fw-bold"><span class="d-block">Reviewed by</span>
+              <span>Trooper FN5698</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--bottom image-->
+  <section class="bottom-image">
+  </section>
+
+  <!--SECTION footer-->
+  <footer class="container-fluid p-4 " id="contact">
+    <div class="row justify-content-center align-items-center bg-light-subtle p-3">
+      <!--Address-->
+      <div class="col-md-4 small-font fw-bold g-3"><span class="m-5">Visit Us</span><br><span class="m-5">1 Death Star
+          Lane,</span><br><span class="m-5">Galaxy
+          Far Far Away</span></div>
+
+      <!--Phone number-->
+      <div class="col-md-4 small-font fw-bold g-3">
+        <div class="text-start">
+          <span class="m-5">Contact</span><br><span class="m-5">1(555) 555-1234</span><br><span class="m-5">24 hours, 7
+            days a week</span>
+        </div>
+      </div>
+
+      <!--Socials-->
+      <div class="col-md-4 g-3">
+        <div class="text-start mx-5">
+          <span class="small-font fw-bold">Socials</span><br>
+          <a class="btn p-0 text-danger" href="#">
+            <span class="mdi mdi-twitter"></span></a>
+          <a class="btn p-0  text-danger" href="#"><span class="mdi mdi-instagram"></span></a>
+          <a class="btn p-0  text-danger" href="#">
+            <span class="mdi mdi-facebook"></span></a>
+          <a class="btn p-0  text-danger" href="#">
+            <span class="mdi mdi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

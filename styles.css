@@ -1,6 +1,76 @@
+.hero-section {
+  min-height: 70vh;
+  background-image: url(https://images.unsplash.com/photo-1547700055-b61cacebece9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.425);
+  background-blend-mode: darken;
+}
+
 .playfair-display-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+}
+
+.magic-container {
+  position: static;
+}
+
+.magic-card {
+  position: static;
+  top: 10px;
+  width: 24rem;
+  max-width: 100%;
+}
+
+
+.bottom-image {
+  min-height: 50vh;
+  background-image: url(https://images.unsplash.com/photo-1610524193579-35934d02c8f3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.large-font {
+  font-size: 70px;
+}
+
+.small-font {
+  font-size: 10px;
+}
+
+.smaller-font {
+  font-size: 8px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.945);
+}
+
+@media screen and (min-width:768px) {
+
+  .magic-container {
+    position: relative;
+  }
+
+  .magic-card {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 24rem;
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem;
+  }
+
 }
