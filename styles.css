@@ -8,6 +8,10 @@
   background-blend-mode: darken;
 }
 
+.navbar .nav-link:hover {
+  color: var(--bs-danger);
+}
+
 .playfair-display-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -38,6 +42,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+footer .btn.text-danger:hover {
+  color: var(--bs-dark) !important;
 }
 
 .large-font {
